@@ -4,6 +4,8 @@ The module have simple calender
 
 ## Installation
 
+![image](https://user-images.githubusercontent.com/2674996/160621869-725c8c40-83f9-4a56-bcc4-a4103b701808.png)
+
 ```sh
 npm install react-native-simple-calendar
 ```
@@ -11,11 +13,17 @@ npm install react-native-simple-calendar
 ## Usage
 
 ```js
-import { multiply } from "react-native-simple-calendar";
+import { Calendar } from 'react-native-simple-calendar';
 
 // ...
 
-const result = await multiply(3, 7);
+<View style={styles.container}>
+  <Calendar onChange={(date)=> this.setState({date})} MinYY={1922} MaxYY={2022}/>
+  {
+      this.state.date &&
+      <Text>{this.state.date.DD}-{this.state.date.MMM}-{this.state.date.YYYY}</Text>
+    }
+</View>
 ```
 
 ## Contributing
