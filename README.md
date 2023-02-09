@@ -30,6 +30,8 @@ import { Calendar } from 'react-native-simple-calendar';
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
+Buy me a coffee ☕ [click here](https://www.buymeacoffee.com/vickysaini)
+
 ## License
 
 MIT
